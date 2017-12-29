@@ -1,0 +1,17 @@
+{
+  "name": "webpack_demo",
+  "version": "1.0.0",
+  "description": "demo",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^1.1.5"
+  }
+}
