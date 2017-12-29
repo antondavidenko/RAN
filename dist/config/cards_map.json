@@ -1,0 +1,23 @@
+[
+{ "tile": [1, 2], "rotate": false }, { "tile": [2, 3], "rotate": false }, { "tile": [4, 3], "rotate": false },{ "tile": [1, 3], "rotate": false }, { "tile": [1, 3], "rotate": false },
+{ "tile": [1, 3], "rotate": false }, { "tile": [1, 3], "rotate": false }, { "tile": [1, 3], "rotate": false },{ "tile": [1, 3], "rotate": false }, { "tile": [1, 3], "rotate": false },
+{ "tile": [1, 3], "rotate": true }, { "tile": [1, 3], "rotate": true }, { "tile": [1, 3], "rotate": true },{ "tile": [1, 3], "rotate": true }, { "tile": [2, 3], "rotate": false },
+{ "tile": [1, 3], "rotate": true }, { "tile": [1, 3], "rotate": true }, { "tile": [1, 3], "rotate": true },{ "tile": [1, 3], "rotate": true }, { "tile": [1, 3], "rotate": true },
+{ "tile": [1, 3], "rotate": true }, { "tile": [1, 3], "rotate": true }, { "tile": [1, 3], "rotate": true },{ "tile": [1, 3], "rotate": true }, { "tile": [1, 3], "rotate": true },
+{ "tile": [1, 3], "rotate": true }, { "tile": [1, 3], "rotate": true }, { "tile": [1, 3], "rotate": false },{ "tile": [1, 3], "rotate": true }, { "tile": [1, 3], "rotate": true },
+{ "tile": [1, 3], "rotate": true }, { "tile": [2, 3], "rotate": false }, { "tile": [1, 3], "rotate": true },{ "tile": [1, 3], "rotate": true }, { "tile": [1, 3], "rotate": true },
+
+{ "tile": [1, 3], "rotate": true }, { "tile": [1, 3], "rotate": true }, { "tile": [4, 3], "rotate": false },{ "tile": [1, 2], "rotate": false }, { "tile": [1, 2], "rotate": true },
+{ "tile": [1, 2], "rotate": false }, { "tile": [1, 2], "rotate": false }, { "tile": [1, 2], "rotate": false },{ "tile": [1, 2], "rotate": false }, { "tile": [1, 2], "rotate": false },
+{ "tile": [1, 2], "rotate": false }, { "tile": [4, 2], "rotate": true }, { "tile": [1, 2], "rotate": false },{ "tile": [1, 2], "rotate": false }, { "tile": [4, 2], "rotate": true },
+{ "tile": [4, 2], "rotate": true }, { "tile": [4, 2], "rotate": false }, { "tile": [4, 2], "rotate": false },{ "tile": [4, 2], "rotate": false }, { "tile": [4, 2], "rotate": false },
+{ "tile": [4, 2], "rotate": false }, { "tile": [4, 2], "rotate": false }, { "tile": [4, 2], "rotate": false },{ "tile": [4, 2], "rotate": false }, { "tile": [4, 3], "rotate": true },
+{ "tile": [4, 3], "rotate": false }, { "tile": [4, 1], "rotate": false }, { "tile": [4, 3], "rotate": true },{ "tile": [4, 3], "rotate": false }, { "tile": [4, 3], "rotate": true },
+{ "tile": [4, 1], "rotate": false }, { "tile": [4, 1], "rotate": false }, { "tile": [4, 3], "rotate": true },{ "tile": [4, 3], "rotate": false }, { "tile": [4, 3], "rotate": false },
+
+{ "tile": [3, 4], "rotate": true }, { "tile": [3, 4], "rotate": true }, { "tile": [3, 4], "rotate": false },{ "tile": [3, 4], "rotate": false }, { "tile": [3, 4], "rotate": true },
+{ "tile": [1, 4], "rotate": true }, { "tile": [3, 4], "rotate": true }, { "tile": [3, 4], "rotate": false },{ "tile": [1, 4], "rotate": false }, { "tile": [3, 4], "rotate": false },
+{ "tile": [1, 4], "rotate": false }, { "tile": [3, 4], "rotate": false }, { "tile": [3, 2], "rotate": false },{ "tile": [4, 3], "rotate": false }, { "tile": [3, 2], "rotate": false },
+{ "tile": [3, 2], "rotate": true }, { "tile": [4, 3], "rotate": false }, { "tile": [3, 2], "rotate": true },{ "tile": [1, 4], "rotate": true }, { "tile": [1, 2], "rotate": true },
+{ "tile": [1, 3], "rotate": true }, { "tile": [1, 3], "rotate": true }
+]
