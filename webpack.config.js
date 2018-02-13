@@ -11,5 +11,17 @@ module.exports = {
     },
     plugins: [
         new UglifyJsPlugin()
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                use: {
+                    loader:'babel-loader',
+                    options: { presets: ['es2015-without-strict'] }
+                },
+                test: /\.js$/,
+                exclude: /node_modules/
+            }
+        ]
+    }
 };

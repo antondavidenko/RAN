@@ -1,11 +1,11 @@
+var ranSndConsts = require('./mvcs/model/ranSndConsts.js');
+window.ranSndConsts = ranSndConsts; // singleton
+
 var RanUtils = require('./mvcs/service/ranUtils.js');
 window.utils = new RanUtils(); // singleton
 
 var GameModel = require('./mvcs/model/gameModel.js');
 window.gameModel = new GameModel(); // singleton
-
-var ranSndConsts = require('./mvcs/model/ranSndConsts.js');
-window.ranSndConsts = ranSndConsts; // singleton
 
 var RanViewCallbacksVO = require('./mvcs/model/ranViewCallbacksVO.js');
 
@@ -68,6 +68,7 @@ main = () =>
         ranViewCallbacks = new RanViewCallbacksVO(pocketCallback, changeCallback, rotateCallback, toggleSndCallback, restartCallback, playSndCallback);
         ranView.init(app.stage, ranViewCallbacks);
         ranView.renderTable(gameModel.getViewData());
+        ranView.toggleSnd(gameModel.getSnd());
 
         app.ticker.add(function (delta) {
             ranView.update(delta);

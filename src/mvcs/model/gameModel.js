@@ -9,7 +9,7 @@ var GameModel = function()
     this.showLose = false;
 
 	this.tilesInfo = [];
-	this.currentMarker = {}
+	this.currentMarker = {};
 	this.currentStep = 0;
 	this.tileTube = 0;
 	this.tileFireman = 0;
@@ -21,7 +21,7 @@ var GameModel = function()
 	
 	this.deck = new DeckModel();
 
-	var snd = true;
+	var snd = !(document.cookie.indexOf(ranSndConsts.RAN_SOUND_OFF)>=0);
 	this.getSnd = function() {return snd;};
     this.setSnd = function(setSnd) {snd = setSnd;};
 	
@@ -55,7 +55,7 @@ var GameModel = function()
 		}
 
         this.showWin = false;
-	}
+	};
 	
 	getStarCount = () =>
 	{
