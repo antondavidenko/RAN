@@ -9,3 +9,5 @@ var WindowAbstract = function() {
         container.visible = setVisible;
     }
 };
+
+module.exports = WindowAbstract;

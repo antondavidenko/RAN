@@ -8,7 +8,7 @@ var RanUtils = function()
 			res = (gameModel.tableData[y][x] === 0);
 		}
 		return res;
-	}
+	};
 
 	this.defineNextCell = function(id)
 	{
@@ -33,7 +33,7 @@ var RanUtils = function()
 		}
 		
 		return res;
-	}
+	};
 	
 	this.defineRequireJoin = function(id)
 	{
@@ -46,12 +46,12 @@ var RanUtils = function()
 			case 4: res = 2; break;
 		}
 		return res;
-	}		
+	};
 	
 	this.defineDirection = function(tile)
 	{
 		return (tile[0]==gameModel.requireJoin)?tile[1]:tile[0];
-	}
+	};
 	
 	this.isTileApplicable = function(tile)
 	{
@@ -63,16 +63,30 @@ var RanUtils = function()
 		{
 			direction = this.defineDirection(tile);
 			nextCell = this.defineNextCell(direction);
-			res = ((nextCell.x==4)&&(nextCell.y==2))?true:this.checkPointAvaliable(nextCell.x, nextCell.y);
+			res = ((nextCell.x==4)&&(nextCell.y==2)&&(direction==3))?true:this.checkPointAvaliable(nextCell.x, nextCell.y);
 		}
 		return res;
-	}
+	};
+
+	this.isAnyTileApplicable = function()
+	{
+		res = ((this.isTileApplicable([1,2]))
+			 ||(this.isTileApplicable([1,3]))
+			 ||(this.isTileApplicable([1,4]))
+             ||(this.isTileApplicable([2,3]))
+             ||(this.isTileApplicable([2,4]))
+             ||(this.isTileApplicable([3,4]))
+		);
+		return res;
+	};
+
 	
 	this.isTileRotatable = function(tileName)
 	{
 		var rotate = gameModel.tilesInfo[Number(tileName.substr(4,5))].rotate;
 		return rotate;
 	}	
-}
+};
 
-this.utils = new RanUtils()
+//this.utils = new RanUtils();
+module.exports = RanUtils;

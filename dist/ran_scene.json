@@ -5,12 +5,6 @@
 	{"type":"animation", "name":"final_animation", "image":"img/bg_part2.png", "scale":0.7, "setx":805,  "sety":196,
 	"frames":["anim01","anim02","anim03","anim04","anim05","anim06"], "speed":0.2},
 
-	{"type":"sprite", "name":"pocket1", "texture":"card0",  "setx":100,  "sety":514, "scale":0.75, "anchor":0.5},
-	{"type":"sprite", "name":"pocket2", "texture":"card15", "setx":280, "sety":514, "scale":0.75, "anchor":0.5},
-	{"type":"sprite", "name":"pocket3", "texture":"card91", "setx":460, "sety":514, "scale":0.75, "anchor":0.5},
-	{"type":"sprite", "name":"pocket4", "texture":"card55", "setx":640, "sety":514, "scale":0.75, "anchor":0.5},
-	{"type":"sprite", "name":"pocket5", "texture":"card75", "setx":820, "sety":514, "scale":0.75, "anchor":0.5},
-
 	{"type":"sprite", "name":"table11", "texture":"blue_card", "setx":228, "sety":85, "scale":0.56, "anchor":0.5},
 	{"type":"sprite", "name":"table12", "texture":"blue_card", "setx":345, "sety":85, "scale":0.56, "anchor":0.5},
 	{"type":"sprite", "name":"table13", "texture":"blue_card", "setx":462, "sety":85, "scale":0.56, "anchor":0.5},
@@ -26,6 +20,12 @@
 	{"type":"sprite", "name":"table32", "texture":"green_card","setx":345, "sety":319, "scale":0.56, "anchor":0.5},
 	{"type":"sprite", "name":"table33", "texture":"blue_card", "setx":462, "sety":319, "scale":0.56, "anchor":0.5},
 	{"type":"sprite", "name":"table34", "texture":"blue_card", "setx":579, "sety":319, "scale":0.56, "anchor":0.5},
+
+	{"type":"sprite", "name":"pocket1", "texture":"card0",  "setx":100,  "sety":514, "scale":0.75, "anchor":0.5},
+	{"type":"sprite", "name":"pocket2", "texture":"card15", "setx":280, "sety":514, "scale":0.75, "anchor":0.5},
+	{"type":"sprite", "name":"pocket3", "texture":"card91", "setx":460, "sety":514, "scale":0.75, "anchor":0.5},
+	{"type":"sprite", "name":"pocket4", "texture":"card55", "setx":640, "sety":514, "scale":0.75, "anchor":0.5},
+	{"type":"sprite", "name":"pocket5", "texture":"card75", "setx":820, "sety":514, "scale":0.75, "anchor":0.5},
 	
 	{"type":"sprite", "name":"btn_rotate_1", "texture":"btn_rotate", "setx":20, "sety":380, "scalex":0.7, "scaley":0.7, "alpha":1},
 	{"type":"sprite", "name":"btn_rotate_2", "texture":"btn_rotate", "setx":200, "sety":380, "scalex":0.7, "scaley":0.7, "alpha":1},
@@ -37,17 +37,22 @@
 	{"type":"sprite", "name":"star2", "texture":"star", "scalex":0.7, "scaley":0.7, "setx":825, "sety":30},
 	{"type":"text", "name":"starText", "text":"5", "setx":880, "sety":25, "params":{"fill":"0xf01312", "align":"left", "fontSize":60}},
 
-	{"type":"sprite", "name":"help", "texture":"btn_text", "setx":770, "sety":120, "scalex":0.7, "scaley":0.7, "alpha":1},
-	{"type":"text", "name":"help_text", "text":"HELP", "setx":815, "sety":128, "params":{"fill":"0xffffff", "align":"left", "fontSize":30}},	
+	{"type":"sprite", "name":"help", "texture":"btn_text", "setx":770, "sety":100, "scalex":0.7, "scaley":0.7, "alpha":1},
+	{"type":"text", "name":"help_text", "text":"HELP", "setx":815, "sety":108, "params":{"fill":"0xffffff", "align":"left", "fontSize":30}},
 	
-	{"type":"sprite", "name":"reset", "texture":"btn_text", "setx":770, "sety":180, "scalex":0.7, "scaley":0.7, "alpha":1},	
-	{"type":"text", "name":"reset_text", "text":"RESET", "setx":800, "sety":188, "params":{"fill":"0xffffff", "align":"left", "fontSize":30}},	
+	{"type":"sprite", "name":"reset", "texture":"btn_text", "setx":770, "sety":160, "scalex":0.7, "scaley":0.7, "alpha":1},
+	{"type":"text", "name":"reset_text", "text":"RESET", "setx":800, "sety":168, "params":{"fill":"0xffffff", "align":"left", "fontSize":30}},
+
+	{"type":"sprite", "name":"sound", "texture":"btn_text", "setx":770, "sety":220, "scalex":0.7, "scaley":0.7, "alpha":1},
+	{"type":"text", "name":"sound_text", "text":" SND ON", "setx":785, "sety":228, "params":{"fill":"0xffffff", "align":"left", "fontSize":30}},
 
 	{"type":"sprite", "name":"btn_change_1", "texture":"btn_change", "setx":20, "sety":595, "scalex":0.7, "scaley":0.7, "alpha":1},
 	{"type":"sprite", "name":"btn_change_2", "texture":"btn_change", "setx":200, "sety":595, "scalex":0.7, "scaley":0.7, "alpha":1},
 	{"type":"sprite", "name":"btn_change_3", "texture":"btn_change", "setx":380, "sety":595, "scalex":0.7, "scaley":0.7, "alpha":1},
 	{"type":"sprite", "name":"btn_change_4", "texture":"btn_change", "setx":560, "sety":595, "scalex":0.7, "scaley":0.7, "alpha":1},
 	{"type":"sprite", "name":"btn_change_5", "texture":"btn_change", "setx":740, "sety":595, "scalex":0.7, "scaley":0.7, "alpha":1},
+
+	{"type":"sprite", "name":"screen_blocker", "texture":"black", "setx":-30, "sety":-30, "scalex":20, "scaley":20, "alpha":0.01},
 
 	{"type":"container", "name":"final_window_container", "setx":0, "sety":0, "content":[
 		{"type":"sprite", "name":"final_black", "texture":"black", "setx":-30, "sety":-30, "scalex":20, "scaley":20, "alpha":1},
@@ -65,6 +70,27 @@
 
 		{"type":"sprite", "name":"final_restart", "texture":"btn_text", "setx":390, "sety":430, "scalex":0.7, "scaley":0.7, "alpha":1},
 		{"type":"text", "name":"final_restart_text", "text":"RESET", "setx":420, "sety":438, "params":{"fill":"0xffffff", "align":"left", "fontSize":30}}
+	]},
+
+	{"type":"container", "name":"lose_window_container", "setx":0, "sety":0, "content":[
+		{"type":"sprite", "name":"lose_black", "texture":"black", "setx":-30, "sety":-30, "scalex":20, "scaley":20, "alpha":1},
+		{"type":"sprite", "name":"lose_window_bg", "texture":"window", "setx":140, "sety":80, "scalex":1.5, "scaley":1.5, "alpha":1},
+
+		{"type":"text", "name":"lose_text", "text":"There is no possibility to put any of new\ncards on the field!\n\nYou can press RESET button and try again.\nIf you are not sure about the point of this\ngame at all, please try to press HELP,\nmaybe it will really help.", "setx":180, "sety":145, "params":{"fill":"0xffffff", "align":"left", "fontSize":30}},
+
+		{"type":"sprite", "name":"lose_restart", "texture":"btn_text", "setx":390, "sety":430, "scalex":0.7, "scaley":0.7, "alpha":1},
+		{"type":"text", "name":"lose_restart_text", "text":"RESET", "setx":420, "sety":438, "params":{"fill":"0xffffff", "align":"left", "fontSize":30}}
+	]},
+
+	{"type":"container", "name":"help_window_container", "setx":0, "sety":0, "content":[
+		{"type":"sprite", "name":"help_black", "texture":"black", "setx":-30, "sety":-30, "scalex":20, "scaley":20, "alpha":1},
+		{"type":"sprite", "name":"help_window_bg", "texture":"window", "setx":140, "sety":80, "scalex":1.5, "scaley":1.5, "alpha":1},
+
+		{"type":"text", "name":"help_text1", "text":"You should find your way through the field from hydrant to\nopposite point, where the pipe ends. Blue cards on the field\nshow empty cells. In order to receive more bonuses points,\nyou should fit all cells. The green card shows the place for\nnext card to fit. You have 5 cards at the bottom of the screen:", "setx":180, "sety":125, "params":{"fill":"0xffffff", "align":"left", "fontSize":22}},
+		{"type":"text", "name":"help_text2", "text":"- You can rotate card only there is no character on the card.\nGreen button with the arrow.\n- If you can put the current card on the field it will be solid.\nIn this case, you can just click on it. Otherwise, the card\nwill be transparent.\n- You can always change the card to any other from the deck.\nBut you will receive less bonuses points if will change too\nmany cards. Red button with the cross.", "setx":180, "sety":250, "params":{"fill":"0xffffff", "align":"left", "fontSize":22}},
+
+		{"type":"sprite", "name":"help_close", "texture":"btn_text", "setx":390, "sety":450, "scalex":0.7, "scaley":0.7, "alpha":1},
+		{"type":"text", "name":"help_close_text", "text":"CLOSE", "setx":420, "sety":458, "params":{"fill":"0xffffff", "align":"left", "fontSize":30}}
 	]}
 
 ],

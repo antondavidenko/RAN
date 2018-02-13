@@ -1,6 +1,9 @@
+var doChangePocket = require('./doChangePocket.js');
+var doShowLose = require('./doShowLose.js');
+var doShowWin = require('./doShowWin.js');
+
 var doInsertCard = function (gameModel, pocketId)
 {
-    $("#insert_snd").get(0).play();
 	if (gameModel.currentMarker.x!= -100)
 	{
 		gameModel.tableData[gameModel.currentMarker.y][gameModel.currentMarker.x] = gameModel.pockets[pocketId-1];
@@ -30,6 +33,12 @@ var doInsertCard = function (gameModel, pocketId)
             gameModel.tileFireman++;
 		}
 
+        if (!utils.isAnyTileApplicable()) {
+            new doShowLose(gameModel);
+        }
+
 		new doChangePocket(gameModel,pocketId);
 	}	
-}
+};
+
+module.exports = doInsertCard;

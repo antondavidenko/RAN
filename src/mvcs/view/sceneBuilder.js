@@ -83,4 +83,6 @@ var sceneBuilder = function(viewObj, sceneJSON)
 	viewObj.textures = textures;
 	
 	return viewObj;
-}
+};
+
+module.exports = sceneBuilder;

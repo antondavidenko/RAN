@@ -1,12 +1,9 @@
 {
-  "name": "webpack_demo",
+  "name": "RAN!_game",
   "version": "1.0.0",
-  "description": "demo",
+  "description": "RAN!_game",
   "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Anton",
+  "author": "Anton Davidenko",
   "license": "ISC",
   "dependencies": {
     "webpack": "^3.10.0"

@@ -1,5 +1,9 @@
-var doShowWin = function()
+var doPlaySnd = require('./doPlaySnd.js');
+
+var doShowWin = function(gameModel)
 {
-    $("#win_snd").get(0).play();
+    new doPlaySnd(gameModel, ranSndConsts.WIN_SND);
     gameModel.showWin = true;
-}
+};
+
+module.exports = doShowWin;

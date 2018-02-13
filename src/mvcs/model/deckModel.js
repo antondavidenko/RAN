@@ -32,4 +32,6 @@ var DeckModel = function()
 	{
 		return this.deck.length;
 	}
-}
+};
+
+module.exports = DeckModel;

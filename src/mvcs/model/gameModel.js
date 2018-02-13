@@ -1,8 +1,12 @@
+var DeckModel = require('./deckModel.js');
+var doChangePocket = require('./../controller/doChangePocket.js');
+
 var GameModel = function()
 {
 	this.tableData = [];
 	this.pockets = [];
 	this.showWin = false;
+    this.showLose = false;
 
 	this.tilesInfo = [];
 	this.currentMarker = {}
@@ -16,6 +20,10 @@ var GameModel = function()
 	this.bonus2starsCount = 5+5;
 	
 	this.deck = new DeckModel();
+
+	var snd = true;
+	this.getSnd = function() {return snd;};
+    this.setSnd = function(setSnd) {snd = setSnd;};
 	
 	this.getTable = function()
 	{
@@ -25,7 +33,7 @@ var GameModel = function()
 			res[this.currentMarker.y][this.currentMarker.x] = 100;
 		}
 		return res;
-	}
+	};
 	
 	this.setupGame = function()
 	{
@@ -62,16 +70,9 @@ var GameModel = function()
 	
 	getStarsToShow = () =>
 	{
-		var res = 2;
-		var tmp = this.deck.getDeckCount() - this.baseDeckCount + this.bonus1starsCount + this.currentStep;
-		if (tmp<=0) 
-		{
-			tmp = this.deck.getDeckCount() - this.baseDeckCount + this.bonus2starsCount + this.currentStep;
-			res = (tmp<=0)?0:1;
-		}
-
-        res = (this.currentStep >= 13)?res+1:res;
-
+        var bonus1 = this.deck.getDeckCount() - this.baseDeckCount + this.bonus1starsCount + this.currentStep;
+        var bonus2  = this.deck.getDeckCount() - this.baseDeckCount + this.bonus2starsCount + this.currentStep;
+		var res = [(this.currentStep >= 13), (bonus1>0), (bonus2>0)];
         return res;
 	}		
 	
@@ -79,6 +80,7 @@ var GameModel = function()
 	{
 		res = {}
 		res.showWin = this.showWin;
+        res.showLose = this.showLose;
 		res.pockets = this.pockets;
 		res.table = this.getTable();
 		res.requireJoin = this.requireJoin;
@@ -89,4 +91,6 @@ var GameModel = function()
 
 		return res;
 	}	
-}
+};
+
+module.exports = GameModel;
